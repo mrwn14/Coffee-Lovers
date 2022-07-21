@@ -31,13 +31,13 @@ function App() {
     alert("Hello! I am an alert box!");
   }
   return (
-    <div className="App">
+    <div id="4" className="App">
       <Navbar bg="dark" variant="dark" className="sticky-top">
         <Container>
-          <Navbar.Brand href="#home">Coffee Lovers ☕️</Navbar.Brand>
+          <Navbar.Brand href="#4">Coffee Lovers ☕️</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">{t("home")}</Nav.Link>
-            <Nav.Link href="#1">Coffee</Nav.Link>
+            <Nav.Link href="#4">{t("home")}</Nav.Link>
+            <Nav.Link href="#3">Coffee</Nav.Link>
             <Nav.Link href="#2">Machines</Nav.Link>
           </Nav>
         </Container>
@@ -48,7 +48,9 @@ function App() {
         <div className="mainPage position-absolute top-50 start-50 translate-middle text-white">
           <h1 className="py-1">Coffee Lovers</h1>
           <h1 className="py-5">{t("whoareWe")}</h1>
-          <Button>Get Started</Button>
+          <Button>
+              <a href="#1" className="azerty text-white">{t("start")}</a>
+            </Button>
         </div>
       </div>
       {/* cards page*/}
@@ -84,6 +86,7 @@ function App() {
           </Card.Body>
         </Card>
       </div>
+      <div id="3"></div>
       <Carousel></Carousel>
       <div id="2"></div>
       <BMachines></BMachines>
