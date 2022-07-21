@@ -108,3 +108,10 @@ height: 40vh;
 .feedback{
   background-color: white;
 }
+.azerty{
+text-decoration: none;
+}
+.forms{
+  padding: 7%;
+  background-image: linear-gradient(#c9aa8a, #212121);
+}

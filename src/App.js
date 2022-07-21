@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Card from 'react-bootstrap/Card';
-import Rectangle5 from './images/Rectangle 5.png'; 
+import Rectangle5 from './images/Rectangle 5.png';
 import Rectangle6 from './images/Rectangle 6.png';
 import Rectangle7 from './images/Rectangle 7.png'
 import "./index.css";
@@ -16,27 +16,32 @@ import BMachines from './components/MDBAccordion';
 import "./components/i18next";
 import Translate from './components/translate';
 import { useTranslation } from 'react-i18next';
+import { MDBInput } from 'mdb-react-ui-kit';
+import { MDBTextArea } from 'mdb-react-ui-kit';
 
 
 function App() {
   const { t, i18n } = useTranslation();
 
-    function handleChangeLng(theLang) {
-        i18n.changeLanguage(theLang);
-        localStorage.setItem("lng", theLang);
-    }; 
+  function handleChangeLng(theLang) {
+    i18n.changeLanguage(theLang);
+    localStorage.setItem("lng", theLang);
+  };
+  function myFunction() {
+    alert("Hello! I am an alert box!");
+  }
   return (
     <div className="App">
       <Navbar bg="dark" variant="dark" className="sticky-top">
         <Container>
           <Navbar.Brand href="#home">Coffee Lovers ☕️</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#home">{t("home")}</Nav.Link>
+            <Nav.Link href="#1">Coffee</Nav.Link>
+            <Nav.Link href="#2">Machines</Nav.Link>
           </Nav>
         </Container>
-        <Translate handleLang= {handleChangeLng}></Translate>
+        <Translate handleLang={handleChangeLng}></Translate>
       </Navbar>
       {/* Lead page */}
       <div className="content position-relative text-center align-items-center">
@@ -47,34 +52,51 @@ function App() {
         </div>
       </div>
       {/* cards page*/}
-      <div className="brews">
+      <div id="1" className="brews">
         <Card className="brew">
           <Card.Img src={Rectangle5} className="images" />
           <Card.Body className="testing text-white">
             <Card.Title>Espresso, The classic</Card.Title>
-            <Card.Text>If you want something done right you've got to do it yourself. For many of us, a cup of coffee is one of our most enjoyed rituals of the day. Having your own espresso machine gives you the chance to turn those everyday coffee grinds into an aromatic delight from the comfort of your own kitchen. These machines specialize in concentrated coffee that’s far more flavourful and full-bodied than the product of a standard drip coffee maker.</Card.Text>
-            <Button>Click Here</Button>
+            <Card.Text>{t("espresso")}</Card.Text>
+            <Button>
+              <a href="https://www.baristainstitute.com/blog/jori-korhonen/february-2020/9-steps-how-make-perfect-espresso" className="azerty text-white" target="_blank">Click For Method</a>
+            </Button>
           </Card.Body>
         </Card>
         <Card className="brew">
           <Card.Img src={Rectangle6} className="images" />
           <Card.Body className="testing text-white">
             <Card.Title>Filter Coffee, brewed</Card.Title>
-            <Card.Text>Traditional filter coffee makers have stood the test of time for their convenience and ability to brew large quantities of classic American-style coffee. Drip coffee makers are different from pour over and other types of coffee machines in that they're manual — the user gets to choose the heat of the water and brew the coffee. Plus, with today's rising coffee prices, nothing beats a homemade filter coffee.</Card.Text>
-            <Button>Click Here</Button>
+            <Card.Text>{t("brewedd")}</Card.Text>
+            <Button>
+              <a href="https://www.vegrecipesofindia.com/filter-coffee-recipe/" className="azerty text-white" target="_blank">Click For Method</a>
+            </Button>
           </Card.Body>
         </Card>
         <Card className="brew">
-          <Card.Img src={Rectangle7} className="images"/>
+          <Card.Img src={Rectangle7} className="images" />
           <Card.Body className="testing text-white">
             <Card.Title>Moka Pot</Card.Title>
-            <Card.Text>The moka pot is a stove-top or electric coffee maker that brews coffee by passing boiling water pressurised by steam through ground coffee. Spreading from Italy, the moka pot is today most commonly used in Europe and in Latin America.</Card.Text>
-            <Button>Click Here</Button>
+            <Card.Text>{t("mokapot")}</Card.Text>
+            <Button>
+              <a href="https://bluebottlecoffee.com/brew-guides/bialetti-moka-pot" className="azerty text-white" target="_blank">Click For Method</a>
+            </Button>
           </Card.Body>
         </Card>
       </div>
       <Carousel></Carousel>
+      <div id="2"></div>
       <BMachines></BMachines>
+      <div className="forms">
+        <h1>Feedback and Recommendation</h1>
+        <MDBInput className="text-white" label='Email input' id='typeEmail' type='email' />
+        <MDBTextArea label='Message' id='textAreaExample' rows={4} />
+        <button onClick={() => alert("Thanks for your feedback! We will contact you regarding this and let you know if we decide to implement it.")}>
+        Submit
+        </button>
+      </div>
+
+
     </div>
   );
 }
