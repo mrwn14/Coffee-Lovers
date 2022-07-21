@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/Coffee-Lovers/static/css/main.9c58c246.css",
-    "main.js": "/Coffee-Lovers/static/js/main.576a709a.js",
+    "main.css": "/Coffee-Lovers/static/css/main.17b1596b.css",
+    "main.js": "/Coffee-Lovers/static/js/main.f487c907.js",
     "static/media/mike-kenneally-TD4DBagg2wE-unsplash.jpg": "/Coffee-Lovers/static/media/mike-kenneally-TD4DBagg2wE-unsplash.e34dfbbef055a29bcff2.jpg",
+    "static/media/mediumroast.jpg": "/Coffee-Lovers/static/media/mediumroast.10b9633ccb37e0488d1f.jpg",
+    "static/media/lightroast.jpg": "/Coffee-Lovers/static/media/lightroast.3f594f6db691ea547168.jpg",
     "static/media/Rectangle 7.png": "/Coffee-Lovers/static/media/Rectangle 7.afd875a62dde64545cbe.png",
     "static/media/Rectangle 6.png": "/Coffee-Lovers/static/media/Rectangle 6.f086c8a00e954e599919.png",
     "static/media/Rectangle 5.png": "/Coffee-Lovers/static/media/Rectangle 5.ec28cacb0e4d244e0df7.png",
     "index.html": "/Coffee-Lovers/index.html",
-    "main.9c58c246.css.map": "/Coffee-Lovers/static/css/main.9c58c246.css.map",
-    "main.576a709a.js.map": "/Coffee-Lovers/static/js/main.576a709a.js.map"
+    "main.17b1596b.css.map": "/Coffee-Lovers/static/css/main.17b1596b.css.map",
+    "main.f487c907.js.map": "/Coffee-Lovers/static/js/main.f487c907.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c58c246.css",
-    "static/js/main.576a709a.js"
+    "static/css/main.17b1596b.css",
+    "static/js/main.f487c907.js"
   ]
 }
