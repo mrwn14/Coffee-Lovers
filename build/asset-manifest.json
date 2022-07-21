@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Coffee-Lovers-Final/static/css/main.25556f93.css",
+    "main.js": "/Coffee-Lovers-Final/static/js/main.f1017cce.js",
+    "static/media/mike-kenneally-TD4DBagg2wE-unsplash.jpg": "/Coffee-Lovers-Final/static/media/mike-kenneally-TD4DBagg2wE-unsplash.e34dfbbef055a29bcff2.jpg",
+    "static/media/Rectangle 7.png": "/Coffee-Lovers-Final/static/media/Rectangle 7.afd875a62dde64545cbe.png",
+    "static/media/Rectangle 6.png": "/Coffee-Lovers-Final/static/media/Rectangle 6.f086c8a00e954e599919.png",
+    "static/media/Rectangle 5.png": "/Coffee-Lovers-Final/static/media/Rectangle 5.ec28cacb0e4d244e0df7.png",
+    "index.html": "/Coffee-Lovers-Final/index.html",
+    "main.25556f93.css.map": "/Coffee-Lovers-Final/static/css/main.25556f93.css.map",
+    "main.f1017cce.js.map": "/Coffee-Lovers-Final/static/js/main.f1017cce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25556f93.css",
+    "static/js/main.f1017cce.js"
+  ]
+}
